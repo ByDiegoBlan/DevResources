@@ -10,7 +10,7 @@ import { resources } from "../Database/db"
         <CodeBracket/>
         <h2 class="text-2xl font-semibold border-b">Resources</h2>
     </div>
-    <div class="w-full flex gap-4 p-4 flex-wrap justify-center items-center">
+    <div class="box-border gap-4 w-full flex flex-wrap items-center justify-center">
         {resources.map(resource => <Resource name={resource.name} category={resource.category} prevImage={resource.prevImage} url={resource.url}  id={resource.id} />)}
     </div>
 </main>

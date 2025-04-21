@@ -27,5 +27,19 @@ export const resources: Resource[] = [
         prevImage: "/ResourcesIMG/TiendaNube.png",
         url: "https://paletadecolores.com.mx/",
         category: ["Colors", "Frontend","UI"]
+    },
+    {
+        id: "9a3f1b9d-44b5-4c8e-b7f9-56e70878c9f4",
+        name: "Paletas de colores",
+        prevImage: "/ResourcesIMG/TiendaNube.png",
+        url: "https://paletadecolores.com.mx/",
+        category: ["Colors", "Frontend","UI"]
+    },
+    {
+        id: "9a3f1b9d-44b5-4c8e-b7f9-56e70878c9f4",
+        name: "Paletas de colores",
+        prevImage: "/ResourcesIMG/TiendaNube.png",
+        url: "https://paletadecolores.com.mx/",
+        category: ["Colors", "Frontend","UI"]
     }
 ];
