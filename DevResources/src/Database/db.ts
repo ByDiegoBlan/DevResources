@@ -39,7 +39,7 @@ export const resources: Resource[] = [
         id: "fc1d7c2a-1e4a-4f22-a63c-0f65412a1b01",
         name: "Bento Grid",
         prevImage: "/ResourcesIMG/bentogrid.png",
-        url: "bentogrids.com",
+        url: "https://bentogrids.com/",
         category: ["Layout", "Frontend", "UI"]
     },
     {
