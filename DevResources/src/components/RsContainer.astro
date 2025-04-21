@@ -1,0 +1,16 @@
+---
+import CodeBracket from "/public/icons/CodeBracket.svg"
+import Resource from "./Resource.astro"
+import { resources } from "../Database/db"
+---
+
+<hr class="text-zinc-700 my-5">
+<main class="box-border w-full p-5 flex flex-col gap-4">
+    <div class="flex items-center gap-4 p-4">
+        <CodeBracket/>
+        <h2 class="text-2xl font-semibold border-b">Resources</h2>
+    </div>
+    <div class="w-full flex gap-4 p-4 flex-wrap justify-center items-center">
+        {resources.map(resource => <Resource name={resource.name} category={resource.category} prevImage={resource.prevImage} url={resource.url}  id={resource.id} />)}
+    </div>
+</main>

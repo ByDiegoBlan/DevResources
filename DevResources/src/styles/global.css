@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+
+.font-rubik {
+    font-family: 'Rubik', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.neumorphism{
+    border-radius: 11px;
+background: #333333;
+box-shadow:  5px 5px 10px #141414,
+             -5px -5px 10px #525252;
+}
