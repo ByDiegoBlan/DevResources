@@ -8,21 +8,9 @@
     font-style: normal;
 }
 
-.neumorphism{
+.neumorphism {
     border-radius: 11px;
-background: #333333;
-box-shadow:  5px 5px 10px #141414,
-             -5px -5px 10px #525252;
-}
-
-
-.openMenu{
-    position: relative;
-    top: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-.closeMenu{
-    display: none;
+    background: #333333;
+    box-shadow: 5px 5px 10px #141414,
+        -5px -5px 10px #525252;
 }
