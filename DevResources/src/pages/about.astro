@@ -1,0 +1,70 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="About the project">
+    <div class="box-border w-full pt-8 px-4">
+        <main class="flex flex-col gap-4">
+            <div
+                class="bg-linear-to-l from-purple-500 to-red-500 bg-clip-text text-transparent"
+            >
+                <h1 class="w-full text-4xl font-bold text-center">
+                    About the project
+                </h1>
+            </div>
+            <p class="box-border text-center text-lg font-semibold p-4">
+                DevResources is a project designed to make it easier for
+                developers to access development resources. Our idea is that you
+                don't have to search for your favorite resources one by one, but
+                instead have a place to save them and access them whenever you
+                need.
+            </p>
+            <section class="flex flex-col w-full justify-center">
+                <div
+                    class="w-full bg-linear-to-l from-yellow-500 to-yellow-200 text-transparent bg-clip-text"
+                >
+                    <h2 class="text-2xl text-center font-bold">
+                        No matter what kind of developer you are.
+                    </h2>
+                </div>
+                <aside
+                    class="box-border flex w-full justify-around items-center p-2"
+                >
+                    <span class="w-1/2 flex flex-col gap-2 items-center">
+                        <div class="flex justify-center w-full">
+                            <img
+                                class="w-2/3 max-w-[250px] h-auto"
+                                src="../images/Hand coding-amico.png"
+                            />
+                        </div>
+                        <div
+                            class="bg-linear-to-l from-white via-zinc-50 to-zinc-400 bg-clip-text text-transparent"
+                        >
+                            <p class="text-lg font-bold">Frontend developer</p>
+                        </div>
+                    </span>
+                    <div
+                        class="bg-linear-to-l from-zinc-400 via-white to-zinc-400 bg-clip-text text-transparent"
+                    >
+                        <p class="text-4xl font-bold">OR</p>
+                    </div>
+                    <span class="w-1/2 flex flex-col items-center">
+                        <div class="flex justify-center w-full">
+                            <img
+                                class="w-2/3 max-w-[250px] h-auto"
+                                src="../images/Programmer-rafiki.png"
+                            />
+                        </div>
+                        <div
+                            class="bg-clip-text bg-linear-to-l from-zinc-400 via-white to-zinc-400 text-transparent"
+                        >
+                            <p class="text-lg font-bold w-full">
+                                Backend developer
+                            </p>
+                        </div>
+                    </span>
+                </aside>
+            </section>
+        </main>
+    </div>
+</Layout>

@@ -1,49 +1,56 @@
 ---
 import GithubIcon from "/public/icons/Github.svg";
+import StarIcon from "/public/icons/StarIcon.svg";
 ---
 
 <div class="flex flex-col w-full gap-5 pt-10">
-    <header
-        class="box-border py-4 w-[80%] max-w-[700px] mx-auto inline-block text-4xl text-center font-bold"
-    >
-            <span>
-                Stuff like <span class="text-pink-400">icons,</span>
-                <span class="text-orange-400">fonts,</span>
-                <span class="text-green-400">images,</span>
-                <span class="text-cyan-400">tools,</span>
-            </span>
-            <span class="line2">
-                and <span>a bunch more</span>!
-            </span>
-    </header>
-    <section class="box-border p-4 flex flex-col md:flex-row w-full items-center">
-        <div class="gap-4 p-4 w-full sm:w-3/5">
-            <p class="text-md md:text-lg text-center lg:text-xl font-semibold">
-                <span class="text-lime-400">DevResources</span> is an 
-                <span class="text-cyan-400">open-source</span> project that gathers free resources you can use on your websites.You can contribute to our project on our 
-                <a class="text-purple-400">GitHub</a> repository or by giving us suggestions in the feedback section.
-            </p>
-            <div
-                class="box-border pt-4 flex flex-col items-center gap-2 text-white"
-            >
-                <h2 class="font-bold text-lg text-yellow-400">
-                    Wanna help out with this project?
-                </h2>
-                <div class="flex items-center gap-4">
-                    <GithubIcon />
-                    <a target="_blank" href="https://github.com/ByDiegoBlan/DevResources" class="underline font-bold text-purple-400"
-                        >Go the git respository</a
-                    >
-                </div>
-            </div>
+  <header
+    class="box-border py-4 w-[80%] max-w-[700px] mx-auto inline-block text-4xl text-center font-bold"
+  >
+    <span>
+      Stuff like <span class="text-pink-400">icons,</span>
+      <span class="text-orange-400">fonts,</span>
+      <span class="text-green-400">images,</span>
+      <span class="text-cyan-400">tools,</span>
+    </span>
+    <span class="line2">
+      and <span>a bunch more</span>!
+    </span>
+  </header>
+  <section class="box-border p-4 flex flex-col md:flex-row w-full items-center">
+    <div class="gap-4 p-4 w-full sm:w-3/5">
+      <p class="text-md md:text-lg text-center lg:text-xl font-semibold">
+        <span class="text-lime-400">DevResources</span> is an project that gathers
+        <span class="text-blue-400">free</span> resources you can use on your websites.
+        You can contribute to our project on our
+        <a class="text-purple-400">GitHub</a> repository or by giving us suggestions
+        in the feedback section.
+      </p>
+      <div class="box-border pt-4 flex flex-col items-center gap-2 text-white">
+        <section class="flex gap-2.5">
+          <StarIcon />
+          <h2 class="font-bold text-lg text-yellow-400">
+            Rate our project on GitHub
+          </h2>
+        </section>
+        <div class="flex items-center gap-4">
+          <GithubIcon />
+          <a
+            target="_blank"
+            href="https://github.com/ByDiegoBlan/DevResources"
+            class="underline font-bold text-purple-400"
+            >Go the git respository</a
+          >
         </div>
-        <a class="w-2/5 flex justify-center">
-            <img
-                class="w-full max-w-[250px] h-full object-contain"
-                src="../images/Software code testing-amico.png"
-                alt=""
-                title="Work illustrations by Storyset"
-            />
-        </a>
-    </section>
+      </div>
+    </div>
+    <a class="w-2/5 flex justify-center">
+      <img
+        class="w-full max-w-[250px] h-full object-contain"
+        src="../images/Software code testing-amico.png"
+        alt="Work illustrations by Storyset"
+        title="Work illustrations by Storyset"
+      />
+    </a>
+  </section>
 </div>
