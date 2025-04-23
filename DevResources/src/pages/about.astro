@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import QuestionsSection from "../components/QuestionsSection.astro";
 ---
 
 <Layout title="About the project">
@@ -29,11 +30,12 @@ import Layout from "../layouts/Layout.astro";
                         No matter what kind of developer you are.
                     </h2>
                 </div>
+
                 <aside
                     class="box-border flex flex-col md:flex-row w-full justify-around items-center p-2"
                 >
                     <span
-                        class="w-1/2 flex flex-col gap-2 justify-center items-center"
+                        class="w-full md:w-1/2 flex flex-col gap-2 justify-center items-center"
                     >
                         <div class="flex justify-center w-full">
                             <img
@@ -42,18 +44,20 @@ import Layout from "../layouts/Layout.astro";
                             />
                         </div>
                         <div
-                            class="bg-linear-to-l from-white via-zinc-50 to-zinc-400 bg-clip-text text-transparent"
+                            class="w-full bg-linear-to-l from-white via-zinc-50 to-zinc-400 bg-clip-text text-transparent"
                         >
-                            <p class="text-lg font-bold">Frontend developer</p>
+                            <p class="w-full text-center text-lg font-bold">
+                                Frontend developer
+                            </p>
                         </div>
                     </span>
                     <div
                         class="bg-linear-to-l from-zinc-400 via-white to-zinc-400 bg-clip-text text-transparent"
                     >
-                        <p class="text-4xl font-bold">OR</p>
+                        <p class="py-4 md:p-0 text-4xl font-bold">OR</p>
                     </div>
                     <span
-                        class="w-1/2 flex flex-col justify-center items-center"
+                        class="w-full md:w-1/2 flex flex-col-reverse md:flex-col justify-center items-center"
                     >
                         <div class="flex justify-center w-full">
                             <img
@@ -62,15 +66,16 @@ import Layout from "../layouts/Layout.astro";
                             />
                         </div>
                         <div
-                            class="bg-clip-text bg-linear-to-l from-zinc-400 via-white to-zinc-400 text-transparent"
+                            class="w-full bg-clip-text bg-linear-to-l from-zinc-400 via-white to-zinc-400 text-transparent"
                         >
-                            <p class="text-lg font-bold w-full">
+                            <p class="text-center text-lg font-bold w-full">
                                 Backend developer
                             </p>
                         </div>
                     </span>
                 </aside>
             </section>
+            <QuestionsSection />
         </main>
     </div>
 </Layout>
