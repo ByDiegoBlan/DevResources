@@ -2,6 +2,21 @@
 import HamburgerMenu from "/public/icons/HamburgerMenu.svg";
 ---
 
+<script>
+  const menuIcon = document.querySelector(".navbarIcon");
+  const menu = document.querySelector(".navbarMenu");
+  let menuIsOpen = false;
+  menuIcon?.addEventListener("click", () => {
+    menuIsOpen = !menuIsOpen;
+    if (menuIsOpen) {
+      menu?.classList.remove("hidden");
+      menu?.classList.add("flex");
+    } else {
+      menu?.classList.add("hidden");
+      menu?.classList.remove("flex");
+    }
+  });
+</script>
 <nav
   class="flex sticky top-0 box-border bg-zinc-900 w-full justify-between items-center h-20 p-4 border-b-1 border-purple-500 shadow-lg"
 >
@@ -10,9 +25,11 @@ import HamburgerMenu from "/public/icons/HamburgerMenu.svg";
     <h1 class="text-xl md:text-2xl lg:w-3xl font-[600]">DevResources</h1>
   </div>
   <HamburgerMenu
-    class={"block md:hidden pr-4 hover:cursor-pointer navbar-menu"}
+    class={"block md:hidden pr-4 hover:cursor-pointer navbarIcon"}
   />
-  <ul class="navbar w-3/5 justify-around hidden md:flex">
+  <ul
+    class="box-border navbarMenu p-4 border-purple-400 shadow-purple-400 border-b-2 hidden w-full absolute top-20 h-10 left-0 bg-zinc-900 md:bg-transparent md:relative md:h-auto md:top-0 md:flex md:w-3/5 items-center justify-around md:border-0 md:p-0"
+  >
     <li class="pr-2 text-md lg:text-lg hover:text-amber-300">
       <a href="/">HOME</a>
     </li>
