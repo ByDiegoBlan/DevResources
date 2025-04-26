@@ -2,4 +2,113 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Feedback" />
+<Layout title="Feedback">
+    <main class="p-4 box-border w-full pt-8 flex flex-col items-center">
+        <header class="flex gap-2 items-center justify-center">
+            <div
+                class="bg-linear-to-l from-purple-400 to-cyan-400 bg-clip-text text-transparent"
+            >
+                <h1 class="text-4xl font-bold">Feedback</h1>
+            </div>
+        </header>
+        <p class="p-4 text-center text-lg">
+            We’d love to hear what you think about our site, or if you have any
+            suggestions for resources we should add!
+        </p>
+        <header class="box-border flex gap-4 w-full max-w-[600px] py-4">
+            <img src="../icons/Rocket.svg" />
+            <h2 class="text-2xl font-semibold">New resources</h2>
+        </header>
+        <form
+            class="box-border p-4 w-full flex flex-col justify-center items-center gap-4"
+        >
+            <section
+                class="flex flex-col gap-2 w-full max-w-[600px] items-center"
+            >
+                <label
+                    for="resource-name"
+                    class="font-semibold text-lg hover:cursor-pointer w-full text-left"
+                    >Name of Resource</label
+                >
+                <input
+                    id="resource-name"
+                    class="bg-white p-2 pl-3 w-full rounded placeholder:text-zinc-400 text-black"
+                    placeholder="Write something..."
+                    required
+                />
+            </section>
+            <section
+                class="flex flex-col gap-2 w-full max-w-[600px] items-center"
+            >
+                <label
+                    for="resource-url"
+                    class="font-semibold text-lg hover:cursor-pointer w-full text-left"
+                    >URL</label
+                >
+                <input
+                    id="resource-url"
+                    class="bg-white p-2 pl-3 w-full rounded placeholder:text-zinc-400 text-black"
+                    placeholder="http://example.com"
+                    required
+                />
+            </section>
+            <button
+                class="bg-indigo-400 p-3 w-full max-w-[200px] rounded-md hover:cursor-pointer hover:bg-indigo-600 hover:font-bold transition-all duration-700"
+                >Send</button
+            >
+        </form>
+        <header class="box-border flex gap-4 w-full max-w-[600px] py-4">
+            <img src="../icons/Message.svg" />
+            <h2 class="text-2xl font-semibold">Your opinion</h2>
+        </header>
+        <form
+            class="box-border p-4 w-full flex flex-col justify-center items-center gap-4"
+        >
+            <section
+                class="flex flex-col gap-2 w-full max-w-[600px] items-center"
+            >
+                <label
+                    for="username"
+                    class="font-semibold text-lg hover:cursor-pointer w-full text-left"
+                    >Username</label
+                >
+                <input
+                    id="username"
+                    class="bg-white p-2 pl-3 w-full rounded placeholder:text-zinc-400 text-black"
+                    placeholder="Jonh Doe"
+                    required
+                />
+            </section>
+            <section
+                class="flex flex-col gap-2 w-full max-w-[600px] items-center"
+            >
+                <label
+                    for="user-commets"
+                    class="font-semibold text-lg hover:cursor-pointer w-full text-left"
+                    >Comments</label
+                >
+                <textarea
+                    id="user-commets"
+                    class="bg-white p-2 pl-3 w-full rounded placeholder:text-zinc-400 text-black resize-y"
+                    placeholder="Write your comment: "
+                    required
+                >
+                </textarea>
+            </section>
+            <button
+                class="bg-indigo-400 p-3 w-full max-w-[200px] rounded-md hover:cursor-pointer hover:bg-indigo-600 hover:font-bold transition-all duration-700"
+                >Send</button
+            >
+        </form>
+    </main>
+</Layout>
+<script>
+    const commentsSection: HTMLElement | null =
+        document.querySelector("#user-commets");
+    if (commentsSection) {
+        commentsSection.addEventListener("input", () => {
+            commentsSection.style.height = "64px";
+            commentsSection.style.height = commentsSection.scrollHeight + "px";
+        });
+    }
+</script>
